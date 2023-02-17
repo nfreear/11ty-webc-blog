@@ -1,0 +1,27 @@
+<script webc:type="js" webc:is="template">
+  /**
+   * Site analytics, via GoatCounter.
+   *
+   * @example <img src="https://ndf812.goatcounter.com/count?p=/test-1" alt="">
+   * @see https://www.goatcounter.com/
+   * @see https://www.goatcounter.com/help/pixel
+   */
+
+  const GC_ID = 'ndf812';
+
+  /* siteAnalytics(page, metadata);
+
+  function siteAnalytics (page, metadata) {
+    const TITLE = this.myEncodeURIC(`${title} — ${metadata.title}`);
+    const PATH = page ? page.url : '/unknown-1';
+
+    return `<img src="https://${GC_ID}.goatcounter.com/count?p=${PATH}&t=${TITLE}&b=0" alt="">`;
+  } */
+'';
+</script>
+
+<img
+  webc:if="metadata.gcEnable"
+  :src="`https://${metadata.gcId}.goatcounter.com/count?p=${_enc(metadata.host + page.url)}&t=${_enc(title)}&b=0`"
+  alt=""
+/>

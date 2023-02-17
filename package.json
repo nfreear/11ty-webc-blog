@@ -1,0 +1,22 @@
+{
+  "name": "11ty-webc-blog",
+  "version": "0.1.0",
+  "description": "A starter repository for a blog web site using the Eleventy site generator and WebC.",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "clean": "rm -rf _site",
+    "start": "npx @11ty/eleventy --serve --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nfreear#/11ty-webc-blog.git"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "@11ty/eleventy-plugin-webc": "^0.8.1",
+    "luxon": "^3.2.1"
+  }
+}
