@@ -5,11 +5,9 @@ title: Home
 permalink: /
 ---
 
-Hello world!
+<message-box webc:nokeep></message-box>
 
-New paragraph? I'm an index page.
 
----
 ## Latest Posts
 
 <ol reversed class="postlist">
