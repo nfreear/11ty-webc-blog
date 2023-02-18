@@ -9,11 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nfreear#/11ty-webc-blog.git"
+    "url": "https://github.com/nfreear/11ty-webc-blog.git"
   },
-  "engines": {
-    "node": ">=14"
+  "author": {
+		"name": "Nick Freear"
   },
+  "license": "MIT",
+	"engines": {
+		"node": ">=14"
+	},
+  "homepage": "https://github.com/nfreear/11ty-webc-blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-plugin-webc": "^0.8.1",

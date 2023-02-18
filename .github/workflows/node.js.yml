@@ -1,7 +1,7 @@
 # Workflow to build and deploy a static site to GitHub Pages.
 # https://github.com/actions/starter-workflows/blob/main/ci/node.js.yml
 
-name: Node.js CI
+name: Pages Status
 
 on:
   push:

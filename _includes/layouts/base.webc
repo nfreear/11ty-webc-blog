@@ -1,17 +1,17 @@
 <!doctype html>
 <html :lang="metadata.language">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title webc:is="meta-title">Default Title</title>
-		<meta name="description" :content="metadata.description">
-		<meta name="generator" :content="eleventy.generator + ' + WebC'">
+    <meta name="description" :content="metadata.description">
+    <meta name="generator" :content="eleventy.generator + ' + WebC'">
 
-		<link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 
-		<style @raw="getCss(page.url)" webc:keep></style>
-		<script @raw="getJs(page.url)" webc:nokeep></script>
+    <style @raw="getCss(page.url)" webc:keep></style>
+    <script @raw="getJs(page.url)" webc:nokeep></script>
 	</head>
 
 	<skip-link webc:nokeep></skip-link>
@@ -31,8 +31,8 @@
         <copyright @html="copyright()" webc:nokeep></copyright>
         <owner @text="metadata.author.name" webc:nokeep></owner>.
         Built with <a href="https://11ty.dev/">11ty</a>
-				&middot;
-				<a :href="sourceUrl()">[source]</a>
+        &middot;
+        <a :href="sourceUrl()">[source]</a>
       </small>
     </p>
     <site-analytics webc:nokeep></site-analytics>

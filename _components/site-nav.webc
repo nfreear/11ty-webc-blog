@@ -6,6 +6,7 @@
       /**
        * A site navigation component.
        *
+       * @attribute tag - Key for the `nav` array.
        * @see _data/nav.js
        */
 
@@ -13,10 +14,10 @@
 
       function siteNav(tag) {
         const TAG = tag || 'main';
+        const PATH = nav.pathPrefix || '/';
+        const PAGES = [];
 
         // console.debug('Nav:', nav);
-
-        const PAGES = [];
 
         nav[TAG].forEach((path) => {
           const found = collections.all.find(page => page.inputPath === path);
@@ -26,7 +27,7 @@
         });
 
         return PAGES.map((page) =>`<li class="nav-item">
-            <a href="${page.url}">${page.data.title}</a>
+            <a href="${PATH + page.url}">${page.data.title}</a>
           </li>`)
           .join('');
       }

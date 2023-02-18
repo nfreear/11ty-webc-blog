@@ -1,14 +1,12 @@
 /**
  * Configuration for the Eleventy WebC starter project.
- *
- * @copyright Nick Freear, 15-Feb-2023.
  */
 
 const { DateTime } = require('luxon');
 const pluginWebc = require('@11ty/eleventy-plugin-webc');
 const PKG = require('./package.json');
 
-const layoutAlias = [ 'base', 'default', 'home', 'page', 'post' ];
+const layoutAlias = [ 'base', 'home', 'page', 'post' ];
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(pluginWebc, {
@@ -72,5 +70,9 @@ module.exports = (eleventyConfig) => {
 			data: "_data",          // default: "_data"
 			output: "_site"
 		}, */
+
+    // If your site deploys to a subdirectory, change `pathPrefix`.
+    // Read more: https://www.11ty.dev/docs/config/#deploy-to-a-subdirectory-with-a-path-prefix
+    pathPrefix: '/11ty-webc-blog/'
   };
 };

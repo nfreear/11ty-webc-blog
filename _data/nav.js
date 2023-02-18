@@ -5,6 +5,11 @@
  */
 
 module.exports = {
+	/** Site subdirectory.
+	 * @see eleventy.config.js
+	 */
+	pathPrefix: '/11ty-webc-blog',
+
 	main: [
     "./_pages/index.md",
     "./_pages/about.md"
